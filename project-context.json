@@ -1,0 +1,42 @@
+{
+  "project_name": "Local Grounds Booking System",
+  "version": "1.0.0",
+  "last_updated": "2026-02-28",
+  "status": "Refactoring Architecture",
+  "core_purpose": "SaaS booking platform for local sports ground owners.",
+  "critical_logic": "Time-slot generation & concurrency management.",
+  "tech_stack": {
+    "framework": "Next.js 15 (T3 Stack)",
+    "language": "TypeScript",
+    "styling": "Tailwind CSS + shadcn/ui",
+    "database": "Prisma + PostgreSQL",
+    "api": "tRPC",
+    "auth": "NextAuth.js",
+    "payments": "Stripe",
+    "analytics": "Tremor",
+    "testing": "Vitest + Playwright"
+  },
+  "theme": {
+    "style": "Strict Neutral/Tech",
+    "primary_color": "Indigo-600",
+    "secondary_color": "Zinc-900 (Near Black)",
+    "border_style": "1px Solid Zinc-200",
+    "ui_philosophy": "Functional Minimalism (Utility over Decoration)"
+  },
+  "architecture": {
+    "routing": "Next.js App Router with (player) and (owner) Route Groups",
+    "logic_center": "src/lib/slot-engine.ts (Concurrency & Slot Generation)",
+    "api_layer": "Modular tRPC routers (ground, booking, admin)",
+    "component_strat": "Atomic design: shadcn/ui base + domain-specific folders"
+  },
+  "user_journeys": {
+    "player": ["Discovery", "Real-time Availability", "Booking/Payment"],
+    "owner": ["Inventory Control", "Operations Management", "Growth Analytics"]
+  },
+  "completed_steps": [
+    "Tech stack selection",
+    "Project initialization",
+    "Theme definition",
+    "File structure mapping"
+  ]
+}
