@@ -1,29 +1,54 @@
-# Create T3 App
+# Local Grounds Booking System
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## Overview
+- **Version:** 1.0.0
+- **Last Updated:** 2026-02-28
+- **Status:** Refactoring Architecture
+- **Core Purpose:** SaaS booking platform for local sports ground owners.
+- **Critical Logic:** Time-slot generation & concurrency management.
 
-## What's next? How do I make an app with this?
+## Tech Stack
+- **Framework:** Next.js 15 (T3 Stack)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS + ui.aceternity + lenis
+- **Database:** Prisma + PostgreSQL
+- **API:** tRPC
+- **Auth:** NextAuth.js
+- **Payments:** Stripe
+- **Analytics:** Tremor
+- **Testing:** Vitest + Playwright
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Theme
+- **Style:** Strict Neutral/Tech
+- **Primary Color:** Indigo-600
+- **Secondary Color:** Zinc-900 (Near Black)
+- **Border Style:** 1px Solid Zinc-200
+- **UI Philosophy:** Functional Minimalism (Utility over Decoration)
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Architecture
+- **Routing:** Next.js App Router with (player) and (owner) Route Groups
+- **Logic Center:** src/lib/slot-engine.ts (Concurrency & Slot Generation)
+- **API Layer:** Modular tRPC routers (ground, booking, admin)
+- **Component Strategy:** Atomic design: shadcn/ui base + domain-specific folders
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## User Journeys
+### Player
+- Discovery
+- Real-time Availability
+- Booking/Payment
 
-## Learn More
+### Owner
+- Inventory Control
+- Operations Management
+- Growth Analytics
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## Current Status
+- **Status:** UI/UX Initialization
+- **Last Action:** Design System & Layout command generated
+- **Completed Steps:**
+  - Tech stack selection
+  - Project initialization
+  - Architectural refactor
+  - Aceternity UI & Lenis Integration
+  - Page requirements mapped
+- **Next Immediate Step:** Shared Navbar Implementation
